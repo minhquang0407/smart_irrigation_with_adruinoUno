@@ -69,7 +69,7 @@ Dự án tạo ra sự đột phá bằng cách kết hợp **Edge AI (Trí tu�
     - Relay: D6
     - Buttons: D10, D11
     - LCD: I2C (SDA/SCL)
-2.  Mở `SmartGarden_Arduino/main.ino` bằng Arduino IDE.
+2.  Mở `smart_irrigation_with_adruinoUno/Arduino_Firmware/main.ino` bằng Arduino IDE.
 3.  Cài đặt thư viện: `LiquidCrystal_I2C`, `DHT sensor library`.
 4.  Nạp code vào mạch.
 
@@ -82,7 +82,7 @@ Dự án tạo ra sự đột phá bằng cách kết hợp **Edge AI (Trí tu�
 3.  Kết nối Arduino với máy tính qua cổng USB.
 4.  Chạy ứng dụng:
     ```bash
-    streamlit run app.py
+    streamlit run App/app.py
     ```
 
 ---
