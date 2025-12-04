@@ -5,7 +5,7 @@
 extern "C" {
 #endif
 
-double score(double * input);
+void score(float * input, float * output);
 
 #ifdef __cplusplus
 }
