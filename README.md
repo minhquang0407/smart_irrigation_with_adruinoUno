@@ -1,4 +1,5 @@
-<img width="1824" height="796" alt="image" src="https://github.com/user-attachments/assets/c2d5da99-91cd-48e3-aa9d-fbfbd1f527ac" /># 🌱 Smart Garden AI - Hệ Thống Tưới Tiêu Thông Minh Đa Giác Quan
+<img width="1824" height="796" alt="image" src="https://github.com/user-attachments/assets/c2d5da99-91cd-48e3-aa9d-fbfbd1f527ac" /> 
+#  🌱 Smart Garden AI - Hệ Thống Tưới Tiêu Thông Minh Đa Giác Quan
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
 ![Arduino](https://img.shields.io/badge/Hardware-Arduino_Uno-teal.svg)
