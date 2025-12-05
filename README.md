@@ -73,18 +73,47 @@ Dự án tạo ra sự đột phá bằng cách kết hợp **Edge AI (Trí tu�
 3.  Cài đặt thư viện: `LiquidCrystal_I2C`, `DHT sensor library`.
 4.  Nạp code vào mạch.
 
-### 2. Phần mềm (Python)
-1.  Cài đặt các thư viện cần thiết:
-    ```bash
-    pip install streamlit ultralytics pyserial opencv-python scikit-learn pandas m2cgen
-    ```
-2.  Huấn luyện hoặc tải model YOLO (`best.pt`) vào thư mục dự án.
-3.  Kết nối Arduino với máy tính qua cổng USB.
-4.  Chạy ứng dụng:
-    ```bash
-    streamlit run src/app.py
-    ```
-### ⚙️ Cấu hình An ninh (Security Setup):
+### 2. Phần mềm (Python Setup)
+
+Dự án yêu cầu **Python 3.10** hoặc **3.11** (Khuyến nghị).
+
+#### Bước 1: Cài đặt các thư viện cơ bản
+Mở Terminal tại thư mục dự án và chạy lệnh:
+
+```bash
+pip install -r requirements.txt
+```
+#### Bước 2: Cài đặt thư viện Nhận diện khuôn mặt (Quan trọng)
+Thư viện face_recognition yêu cầu dlib (C++). Vui lòng làm theo hướng dẫn tùy theo hệ điều hành:
+
+🟢 Đối với Windows: Việc cài trực tiếp qua pip thường bị lỗi CMake. Hãy cài đặt theo thứ tự sau:
+
+* Cài CMake:
+
+```bash
+pip install cmake
+```
+1. Cài đặt Dlib (Pre-compiled):
+
+2. Tải file .whl tương ứng với phiên bản Python của bạn tại đây.
+
+    * Ví dụ Python 3.11: Tải dlib-19.24.99-cp311-cp311-win_amd64.whl.
+
+3. Cài đặt file vừa tải:
+
+```bash
+pip install đường_dẫn_đến_file_dlib_vừa_tải.whl
+```
+4. Sau đó mới cài thư viện chính:
+
+```bash
+pip install face-recognition
+```
+🍎 Đối với macOS / 🐧 Linux: Chỉ cần chạy lệnh đơn giản:
+```bash
+pip install face-recognition
+```
+#### Bước 3: Cấu hình An ninh (Security Setup):
 
 1. Chụp một bức ảnh chân dung rõ mặt của bạn.
 
@@ -93,6 +122,14 @@ Dự án tạo ra sự đột phá bằng cách kết hợp **Edge AI (Trí tu�
 3. Chép đè vào `smart_irrigation_with_adruinoUno\src` của dự án.
 
 3. Khởi động lại ứng dụng -> Hệ thống sẽ tự động nhận diện bạn là Admin.
+
+#### Bước 4: Khởi chạy ứng dụng
+Kết nối Arduino vào máy tính, sau đó chạy lệnh:
+
+```bash
+streamlit src/run app.py
+```
+
 ---
 
 ## 🧠 Phương pháp Huấn luyện AI (AI Methodology)
@@ -112,15 +149,6 @@ Dự án tạo ra sự đột phá bằng cách kết hợp **Edge AI (Trí tu�
 ---
 
 ## 📸 Hình ảnh Demo
-
-### 1. Giao diện Streamlit
-*[CHÈN ẢNH CHỤP MÀN HÌNH DASHBOARD CỦA BẠN VÀO ĐÂY]*
-
-### 2. Sơ đồ đấu nối (Wiring)
-*[CHÈN ẢNH MẠCH ĐIỆN HOẶC SƠ ĐỒ FRITZING VÀO ĐÂY]*
-
-### 3. Hoạt động thực tế
-*[CHÈN ẢNH LCD HIỂN THỊ HOẶC GIF DEMO]*
 
 ---
 
