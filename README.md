@@ -153,7 +153,7 @@ streamlit src/run app.py
 ---
 
 ## 🤝 Đóng góp
-Dự án được thực hiện bởi **[Nguyễn Minh Quang]** - Sinh viên  [HCMUS].
+Dự án được thực hiện bởi **Nguyễn Minh Quang** - Sinh viên University of Science - VNU.
 
 
 ---
