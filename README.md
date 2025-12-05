@@ -84,7 +84,15 @@ Dự án tạo ra sự đột phá bằng cách kết hợp **Edge AI (Trí tu�
     ```bash
     streamlit run src/app.py
     ```
+### ⚙️ Cấu hình An ninh (Security Setup):
 
+1. Chụp một bức ảnh chân dung rõ mặt của bạn.
+
+2. Đổi tên thành owner.jpg.
+
+3. Chép đè vào thư mục gốc của dự án.
+
+3. Khởi động lại ứng dụng -> Hệ thống sẽ tự động nhận diện bạn là Admin.
 ---
 
 ## 🧠 Phương pháp Huấn luyện AI (AI Methodology)
